@@ -28,6 +28,7 @@
       <div class="collapse navbar-collapse" id="main-navbar">
 
         <ul class="nav navbar-nav navbar-right">
+
           <!-- auto active current page -->
           <li class="{% if page.url contains 'index.html' %}active{% endif %}"><a href="{{ link-lang }}/index.html">{% t navbar.home %}</a></li>
           <li class="{% if page.url contains '/team/' %}active{% endif %}"><a href="{{ link-lang }}/team">{% t navbar.team %}</a></li>
@@ -43,7 +44,6 @@
             </ul>
           </li>
 
-          <!--<li class="{% if page.url contains '/promotions/' %}active{% endif %}"><a href="/promotions">{% t navbar.promotions %}</a></li>-->
           <li class="{% if page.url contains '/news/' %}active{% endif %}"><a href="{{ link-lang }}/news">{% t navbar.news %}</a></li>
 
           <li class="dropdown {% if page.url contains '/courses/' %}active{% endif %}">
@@ -57,7 +57,29 @@
               <li><a href="{{ link-lang }}/courses/#S4">Semestre 4</a></li>
             </ul>
           </li>
-          <!--<li class="{% if page.url contains '/course/' %}active{% endif %}"><a href="/course">{% t navbar.course %}</a></li>-->
+          
+          {% if site.lang == "fr" %}
+            {% capture link1 %}/en{{ page.url }}{% endcapture %}
+            {% capture link2 %}/de{{ page.url }}{% endcapture %}
+            <li style="max-height:50px"><a href="{{ link1 }}"><img src="/images/United-Kingdom.png"></a></li>
+            <li style="max-height:50px"><a href="{{ link2 }}"><img src="/images/Germany.png"></a></li>
+          {% endif %}
+
+          {% if site.lang == "en" %}
+            {% capture link1 %}{{ page.url }}{% endcapture %}
+            {% capture link2 %}{{ site.baseurl | replace:'en','de' }}{{ page.url }}{% endcapture %}
+            <li style="max-height:50px"><a href="{{ link1 }}"><img src="/images/France.png"></a></li>
+            <li style="max-height:50px"><a href="{{ link2 }}"><img src="/images/Germany.png"></a></li>
+          {% endif %}
+
+          {% if site.lang == "de" %}
+            {% capture link1 %}{{ page.url }}{% endcapture %}
+            {% capture link2 %}{{ site.baseurl | replace:'de','en' }}{{ page.url }}{% endcapture %}
+            <li style="max-height:50px"><a href="{{ link1 }}"><img src="/images/France.png"></a></li>
+            <li style="max-height:50px"><a href="{{ link2 }}"><img src="/images/United-Kingdom.png"></a></li>
+          {% endif %}
+        </ul>
+
       </div><!-- /.navbra-collapse -->
 
     </div><!-- /.container-fluid -->
