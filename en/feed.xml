@@ -9,9 +9,22 @@ mathématique de l'information.
 </description>
     <link>http://csmi.cemosis.fr//</link>
     <atom:link href="http://csmi.cemosis.fr//en/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 04 Sep 2015 19:26:00 +0200</pubDate>
-    <lastBuildDate>Fri, 04 Sep 2015 19:26:00 +0200</lastBuildDate>
+    <pubDate>Mon, 07 Sep 2015 06:13:10 +0200</pubDate>
+    <lastBuildDate>Mon, 07 Sep 2015 06:13:10 +0200</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Réunion de rentrée M1 CSMI</title>
+        <description>&lt;p&gt;Le lundi 7 septembre 2015 en salle C13 à l’UFR Math-Info se tiendra la réunion de rentrée du master CSMI.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 07 Sep 2015 00:00:00 +0200</pubDate>
+        <link>http://csmi.cemosis.fr//en/2015/09/07/reunion-rentree.html</link>
+        <guid isPermaLink="true">http://csmi.cemosis.fr//en/2015/09/07/reunion-rentree.html</guid>
+        
+        <category>csmi</category>
+        
+        
+      </item>
     
       <item>
         <title>Soutenances de stages des M2/CSMI</title>
