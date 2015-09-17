@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html>
+  <!-- links between languages, add  before any internal URLs-->
+  
+  
+  
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="Master mention Mathématiques et Applications, Spécialité Calcul Scientifique et Mathématiques de l'Information" name="title"></meta>
+
+  <title>Rencontre SMAI Industrie autour du HPC</title>
+  <meta name="description" content="HPC dans les entreprises et l’industrie: des outils mathématiques pour tirer profit des nouvelles capacités de calcul scientifique.">
+  <link rel="shortcut icon" type="type/png" href="/images/favicon.png"/>
+
+  <link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+  <!--[if lt IE 9]>
+  <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="/stylesheet/jsSocial/jssocials.css">
+  <link rel="stylesheet" type="text/css" href="/stylesheet/jsSocial/jssocials-theme-flat.css">
+
+  <link rel="stylesheet" type="text/css" href="/stylesheet/jquery.fullPage.css">
+
+  <link rel="stylesheet" type="text/css" href="/stylesheet/bootstrap.min.css">
+  
+  <link rel="stylesheet" type="text/css" href="/stylesheet/hover/hover-min.css">
+  
+  <link rel="stylesheet" type="text/css" href="/stylesheet/custom.css">
+  
+  <link rel="canonical" href="http://csmi.cemosis.fr//event/2015/06/22/rmi-hpc.html">
+  <link rel="alternate" type="application/rss+xml" title="Master Calcul Scientifique et Mathématiques de l'Information" href="http://csmi.cemosis.fr//feed.xml" />
+</head>
+
+
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- mobile logos -->
+            <a class="mobile-brand navbar-brand" href="http://www.unistra.fr/">
+                <img alt="Unistra" src="http://www.unistra.fr/fileadmin/templates/unistra-v2/images/logo.png" style="height:30px">
+            </a>
+            <a class="mobile-brand navbar-brand" href="http://www.cemosis.fr">
+                <img alt="Cemosis" src="http://www.google.com/a/cpanel/cemosis.fr/images/logo.gif?service=google_default" style="height:30px">
+            </a>
+            <a class="mobile-brand navbar-brand" href="https://mathinfo.unistra.fr/">
+                <img alt="UFR" src="https://clarinet.u-strasbg.fr/~gallais/uploads/Site//ufr.png" style="height:30px">
+            </a>
+        </div>
+        
+        <!-- Navbar buttons -->
+        <div class="collapse navbar-collapse navbar-fixed-top" id="main-navbar" style="position:relative">
+            <!-- logos -->
+            <a class="desktop-brand navbar-brand" href="http://www.unistra.fr/">
+                <img alt="Unistra" src="http://www.unistra.fr/fileadmin/templates/unistra-v2/images/logo.png" style="height:30px">
+            </a>
+            <a class="desktop-brand navbar-brand" href="http://www.cemosis.fr">
+                <img alt="Cemosis" src="http://www.google.com/a/cpanel/cemosis.fr/images/logo.gif?service=google_default" style="height:30px">
+            </a>
+            <a class="desktop-brand navbar-brand" href="https://mathinfo.unistra.fr/">
+                <img alt="UFR" src="https://clarinet.u-strasbg.fr/~gallais/uploads/Site//ufr.png" style="height:30px">
+            </a>
+            <ul class="nav navbar-nav navbar-right">
+                <!-- auto active current page -->
+                <li class=""><a href="/">Page d'accueil</a></li>
+                <!-- Team -->
+                <li class="dropdown ">
+                    <a href="/team" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+           &Eacute;quipe <span class="caret"></span></a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="/team/#managers">Responsables</a></li>
+                        <li><a href="/team/#teachingstaff">&Eacute;quipe P&eacute;dagogique</a></li>
+                    </ul>
+                </li>
+                <!-- Promotions -->
+                <li class="dropdown ">
+                    <a href="/promotions" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+           Promotions <span class="caret"></span></a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        
+                        <li><a href="/promotions/#CSMI-2015">CSMI 2015</a></li>
+                        
+                        <li><a href="/promotions/#CSMI-2014">CSMI 2014</a></li>
+                        
+                        <li><a href="/promotions/#CSSI-2013">CSSI 2013</a></li>
+                        
+                        <li><a href="/promotions/#CSSI-2012">CSSI 2012</a></li>
+                        
+                    </ul>
+                </li>
+                <li class=""><a href="/news">Actualit&eacute;s</a></li>
+                <li class="dropdown ">
+                    <a href="/courses" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+           Enseignements <span class="caret"></span></a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="/courses/#S1">Semestre 1</a></li>
+                        <li><a href="/courses/#S2">Semestre 2</a></li>
+                        <li><a href="/courses/#S3">Semestre 3</a></li>
+                        <li><a href="/courses/#S4">Semestre 4</a></li>
+                    </ul>
+                </li>
+                <li class=""><a href="/entreprises">Entreprises</a></li>
+                  
+                <li style="max-height:50px">
+                    <a href="/en/event/2015/06/22/rmi-hpc.html"><img src="/images/United-Kingdom.png"></a>
+                </li>
+                <li style="max-height:50px">
+                    <a href="/de/event/2015/06/22/rmi-hpc.html"><img src="/images/Germany.png"></a>
+                </li>
+                  
+            </ul>
+        </div>
+        <!-- /.navbra-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+<div id="bg-fade-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <div class="slide1"></div>
+        </div>
+        <div class="item">
+            <div class="slide2"></div>
+        </div>
+        <div class="item">
+            <div class="slide3"></div>
+        </div>
+        <div class="item">
+            <div class="slide4"></div>
+        </div>
+        <div class="item">
+            <div class="slide5"></div>
+        </div>
+    </div>
+    <!-- .carousel-inner -->
+    <div id="title-overlay" class="container carousel-overlay text-center">
+        <div class="col-md-8">
+            <h1>Master Calcul Scientifique</h1>
+            <h1 style="text-align:center">et Mathématiques de l'Information</h1>
+            <blockquote class="testimonial">
+                <h2>Les Mathématiques de l'Innovation</h2></blockquote>
+            <a class="btn btn-lg btn-primary fp-buttons" href="mailto:contact-csmi@cemosis.fr">
+                <span class="fa fa-question"></span> Contactez-nous
+            </a>
+            <a class="btn btn-lg btn-success fp-buttons" href="https://aria.u-strasbg.fr/">
+                <span class="fa fa-check"></span> Candidatez
+            </a>
+        </div>
+        <div class="col-md-4">
+            <!--<h2><span class="label label-default">Actualités récentes</span></h2>-->
+            <ul class="list-group" style="text-align:left;padding-top:20px;width: 100%;opacity: .8">
+                
+                <li class="list-group-item">
+                    <h4><small>[2015-09-08] <a href="/cours/2015/09/08/m1-cours-analyse-fonctionnelle.html">Cours Analyse Fonctionnelle et EDP</a></small></h4></li>
+                
+                <li class="list-group-item">
+                    <h4><small>[2015-09-07] <a href="/2015/09/07/reunion-rentree.html">Réunion de rentrée M1 CSMI</a></small></h4></li>
+                
+                <li class="list-group-item">
+                    <h4><small>[2015-08-27] <a href="/internship/2015/08/27/soutenances-stages-m2.html">Soutenances de stages des M2/CSMI</a></small></h4></li>
+                
+                <li class="list-group-item">
+                    <h4><small>[2015-08-26] <a href="/internship/2015/08/26/soutenances-stages-m1.html">Soutenances de stages des M1/CSMI</a></small></h4></li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- .carousel -->
+
+
+
+    <div class="page-header">
+  <h1>Les Actualités du Master</h1>
+</div>
+
+<div class="container" style="padding-top:30px">
+  <div class="row">
+  	<div class="col-md-9">
+    
+    <div class="well">
+<div style="padding-bottom:30px">
+  <h2>Rencontre SMAI Industrie autour du HPC</h2>
+  </div>
+
+  <div style="padding-bottom:30px">
+  <span class="label label-default" style="font-size: 150%">event</span>
+
+  <span>22 Jun 2015</span>
+  
+    
+  
+    
+  
+    
+  
+  <img src="" width="24" height="24">
+  <span>prudhomm</span>
+
+  
+  </div>
+
+  <div style="font-size:130%"><h2 id="hpc-dans-les-entreprises-et-lindustrie-des-outils-mathmatiques-pour-tirer-profit-des-nouvelles-capacits-de-calcul-scientifique">HPC dans les entreprises et l’industrie: des outils mathématiques pour tirer profit des nouvelles capacités de calcul scientifique.</h2>
+
+<p>Cette rencontre est une initiative conjointe de la SMAI et de l’AMIES/CNRS avec le soutien de la Maison de la simulation.</p>
+
+<p>Les moyens de calcul intensifs sont désormais accessibles à un nombre croissants d’entreprises et d’acteurs de l’industrie. Il est à présent possible d’intégrer des calculs scientifiques conséquents dans une stratégie de conception ou de production.</p>
+
+<p>Les spécificités de ces outils de calcul nécessitent souvent de remettre en question les anciennes méthodes de calcul. Par exemple, il peut-être nécessaire de repenser les algorithmes de calcul afin de les adapter à ces calculateurs ou d’enrichir les modèles utilisés. Une autre question concerne la manière dont les résultats de ces calculs massifs peuvent être interprêtés et analysés lorsque les calculs deviennent de plus en plus complexes.</p>
+
+<p>Nous essaierons lors de cette demi-journée de voir comment des membres de la communauté des Mathématiques Appliquées et des acteurs de l’industrie peuvent travailler ensemble pour s’attaquer à ces problèmes.</p>
+
+<p>date: lundi 22 juin 2015 (après-midi)
+lieu: Maison de la simulation, Bâti. 565 - Digiteo, CEA Saclay (plan d’accès).</p>
+
+<h2 id="organisation">Organisation</h2>
+
+<p><img src="gallery.png" alt="" /></p>
+
+<h1 id="fit-19me-rencontre-mathmatiques-industrie">[fit] 19ème Rencontre Mathématiques Industrie</h1>
+<p>## Calcul Haute Performance</p>
+
+<hr />
+<p>## Programme</p>
+
+<ul>
+  <li>13h30 - 14h00 : Accueil / Introduction</li>
+  <li>14h00 - 15h00 : Atelier 1</li>
+  <li>15h00 - 15h30 : Pause</li>
+  <li>15h30 - 16h30 : Atelier 2</li>
+  <li>16h30 - 17h30 : Table ronde</li>
+</ul>
+
+<hr />
+<p>## Accueil - 13h45 - 14h00</p>
+
+<p>Quelques mots d’Introduction</p>
+
+<ul>
+  <li>Maison de La Simulation</li>
+  <li><a href="RMIHPC2015_AMIES.pdf">AMIES PDF Slides</a></li>
+  <li>SMAI</li>
+</ul>
+
+<hr />
+
+<h2 id="atelier-1---14h00---15h00">Atelier 1 - 14h00 - 15h00</h2>
+
+<h2 id="calcul-sur-gpu-pour-les-quations-de-maxwell-histoire-dune-collaboration-math-entreprises-qui-passe--lchelle">Calcul sur GPU pour les équations de Maxwell: Histoire d’une collaboration Math Entreprises qui passe à l’échelle</h2>
+
+<h3 id="n-muot-axessim-p-helluy-u-strasbourgcnrs-insmi-pdf-slidesrmihpc2015phelluynmuotpdf">N. Muot (AxesSim), P. Helluy (U. Strasbourg/CNRS-INSMI) <a href="RMIHPC2015_PHelluy_NMuot.pdf">PDF Slides</a></h3>
+
+<hr />
+<p>## Atelier 2 - 15h30 - 16h30 J. Garnier</p>
+
+<h2 id="le-hpc-au-service-des-incertitudes">Le HPC au service des Incertitudes</h2>
+
+<h3 id="analyse-de-sensibilit-globale-sur-un-modle-dcosystme-marin---dploiement-sur-grille">Analyse de sensibilité globale sur un modèle d’écosystème marin - Déploiement sur grille</h3>
+<p>#### L Viry (U. Grenoble Alpes) <a href="RMIHPC2015_LViry.pdf">PDF Slides</a></p>
+
+<h3 id="utilisation-des-h-matrices-pour-lapprentissage-et-la-simulation-de-champs-gaussiens">Utilisation des h-matrices pour l’apprentissage et la simulation de champs Gaussiens</h3>
+<p>#### R. Lebrun (Airbus) <a href="RMIHPC2015_RLebrun.pdf">PDF Slides</a></p>
+
+<hr />
+
+<h2 id="table-ronde---16h30---17h30">Table Ronde - 16h30 - 17h30</h2>
+
+<h2 id="quelles-collaborations-math-entreprises-en-hpc-mathmatiques-acces-hpc-et-financements-">Quelles collaborations Math Entreprises en HPC: Mathématiques, Acces HPC et Financements ?</h2>
+
+<h3 id="de-hpc-pme-10--hpc-pme-20-du-national-au-rgional">De HPC-PME 1.0 à HPC-PME 2.0: du national au régional</h3>
+<p>#### S. Requena (GENCI) <a href="RMIHPC2015_SRequena.pdf">PDF Slides</a></p>
+
+<h3 id="table-ronde">Table ronde</h3>
+<p>#### S. Requena (Genci), P. Helluy (U. Strasbourg, chargé de mission Calcul INSMI), N. Muot (AxesSim) et la salle</p>
+
+<hr />
+<p>## Éléments de discussion</p>
+
+<ul>
+  <li>Collaboration Math Entreprise mode d’emploi
+    <ul>
+      <li>Simulation, HPC, quels besoins exactement ?</li>
+      <li>le HPC amène-t’il des problèmes/solutions/questions techniques nouvelles pour les entreprises?</li>
+      <li>quels avantages en tire chaque partie entreprise et académique ?</li>
+      <li>comment intégrer des résultats théoriques ? pereniser les relations ? les diffuser au sein des entreprises ?</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+<p>## Éléments de discussion</p>
+
+<ul>
+  <li>Collaboration Math Entreprise mode d’emploi
+    <ul>
+      <li>Positionnement du docteur dans la collaboration: a t’on besoin d’avoir un docteur ou un doctorant pour ce type de relation ?</li>
+      <li>Accès au HPC par les entreprises:</li>
+      <li>qu’est-ce qui est simple, qu’est-ce qu’il l’est moins?</li>
+      <li>quels financements ? quels types de ressources HPC ?</li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="compte-rendu-de-la-rencontre">Compte Rendu de la Rencontre</h1>
+
+<ul>
+  <li>50 inscrits, 30 présents</li>
+</ul>
+
+<h2 id="organisateurs">Organisateurs</h2>
+
+<ul>
+  <li>Analisa Ambroso (AA), AREVA &amp; chargé de mission relations industrielles SMAI</li>
+  <li>Samuel Kokh (SK), CEA &amp; Maison de la Simulation &amp; chargé de mission relations industrielles SMAI</li>
+  <li>Christophe Prudhomme(CP), U. Strasbourg &amp; Chargé de mission AMIES</li>
+</ul>
+
+<h2 id="introduction">Introduction</h2>
+
+<ul>
+  <li>
+    <p>Michel Kern (Maison de la simulation)
+CNRS, CEA, univesoté, applications du calcul intensif. un pool d’ingénieurs, formations au HPC : équipex meso et PATC (européen), c’est gratuit. La MdS contribue au catalogue coordonnée des formations en calcul, avec MAiMoSiNe.</p>
+  </li>
+  <li>
+    <p>Analisa Ambroso (SMAI)
+Bienvenue aux participants de la part de la SMAI.
+Cette journée math-industrie a été plusieurs fois reportée.</p>
+  </li>
+  <li>Christophe Prudhomme (AMIES)
+CP présente le programme de la journée.
+    <ol>
+      <li>Helluy/Muot : calcul sur GPU, une expérience de collaboration université-entreprise</li>
+      <li>Garnier : le HPC au service des incertitudes
+        <ul>
+          <li>L. Viry : analyse de sensibilité sur grilles</li>
+          <li>R. Lebrun (Airbus) : la libraire h-math pour le calcul de h-matrices</li>
+        </ul>
+      </li>
+      <li>Requena : HPC-PME
+ Table ronde
+puis présentation d’AMIES.</li>
+    </ol>
+  </li>
+  <li>PEPS : appel d’offre au fil de l’eau, réponse donnée en moins de 3 semaines.</li>
+  <li>SEME : 4 par an.</li>
+  <li>Success stories : un analogue du forward look est en préparation.</li>
+  <li>Forum emploi math : pas cette année. Dur de trouver un lieu, 1800 inscrits dépasse la capacité de la Cité U. Il faut se préparer plus longtemps à l’avance. Le Forum 2016 aura lieu à la Villette.</li>
+</ul>
+
+<h2 id="prsentations">Présentations</h2>
+
+<h3 id="atelier-1--calcul-sur-gpu-pour-les-quations-de-maxwell-histoire-dune-collaboration-math-entreprises-qui-passe--lchelle">Atelier 1 : Calcul sur GPU pour les équations de Maxwell: Histoire d’une collaboration Math Entreprises qui passe à l’échelle</h3>
+
+<h4 id="n-muot-axessim-p-helluy-u-strasbourgcnrs-insmi">N. Muot (AxesSim), P. Helluy (U. Strasbourg/CNRS-INSMI)</h4>
+
+<p>Axessim, fondée en 2007, 10 personnes (docteurs et ingénieurs), simulation électrmagnétique. Nos clients : de grand groupes (Thalès, Dassault-Aviation, Safran,…). De la recherche en interne, et des collaborations :
+- ONERA/DEMR Toulouse ; on industrialise leur travail, on l’insère dans un environnement graphique plus confortable
+- Xlim (université de Limoges) : idem.</p>
+
+<p>C’est à l’IRMA qu’on a trouvé une compétence en développement GPU. D’abord un stage de M2, puis un CDD de 6 mois, puis une thèse CIFRE. Dans le cadre du projet GREAT (36 mois), IRMA+Axessim ont implémenté sur GPU un logiciel développé à l’ONERA.
+Résultat : gain de performance d’un facteur 10,</p>
+
+<p>Philippe Helluy : la méthode s’applique plus généralement aux systèmes de lois de conservation (généralisation Maxwell) non linéaires. On a voulu faire un solver générique. On a choisi la bibliothèque OpenCL. Avantage : suffisamment abstrait pour piloter divers accélérateurs. Supporté par le réseau Khronos (qui maintient OpenGL) et pas mal d’industriels (NVIDIA,…).</p>
+
+<p>Parallélisme par tâches. OpenCL décide de lui-même l’ordre de lancement des calculs avec le graphe des tâches.</p>
+
+<p>Muot : on a prouvé l’intérêt de
+L’avenir, c’est les objets connectés au contact du corps.
+Cityzens sciences : le maillot avec capteurs tissés dans la fibre, qui communiquent avec un émetteur. Où le placer pour optimiser la consommation ? respecter la norme DAS de puissance émise ?
+Body Cap : une gellule ingérée mesure la température du système digestif. Optimiser le design d’antenne ? Respecter les normes médicales ?
+Notre objectif, c’est de proposer à ces acteurs un accès à des ressources de calcul. Le projet Horoch (financement du ministère de l’industrie) consiste à construire une bdd de propriétés électromagnétiques du corps humain (avec IRCAD = Institut de Recherche sur le Cancer de l’Appareil Digestif).</p>
+
+<h3 id="atelier-2-le-hpc-au-service-des-incertitudes">Atelier 2: Le HPC au service des incertitudes</h3>
+
+<h4 id="laurence-viry-ljk-universit-de-grenoble-alpes">Laurence Viry (LJK, Université de Grenoble-Alpes)</h4>
+
+<p>La quantification d’incertitude, ça consiste à estimer les incertitudes sur les variables d’entrée d’un modèle et à estimer la part d’incertitude qui en résulte sur les sorties. On passe souvetn par un méta-modèle, modèle simplifié.
+J’ai travaillé sur un modèle hydrodynamique couplé à un modèle biologique, déterministe. On s’intéresse à la concentration en phytoplancton.
+L’analyse de sensibilité, pour nous, c’est probabiliste.
+Méthodologie : dépendance linéaire ? si oui, régression. Si non, dépendance monotone ? si oui, régression sur les rangs. Si non, calcul des indices de Sobol.
+Qu’est-ce ? On décompose la variance de $Y=G(X)$ en somme des variances expliquées par les X_i, puis par les couples $(X_i,X_j)$, etc… Les indices de Sobol sont les
+<script type="math/tex">Var(Y|X_i_1,...,X_i_p)/Var(Y).</script>
+Estimer les indices de Sobol, c’est calculer des intégrales en grand dimension. Les méthodes spectrales, peu coûteuses, imposent des hypothèses de régularité. Elles sont limitées aux indices d’ordre 1. Les méthodes Monte-Carlo sont coûteuses. La méthode des hypercubes latins répliqués présente le bon compromis. Le package sensitivity de R fabrique automatiquement les plans d’expérience. La grille de calcul de Grenoble (CIMENT) admet des runs de priorité 0, automatiquement éjectés face à un run prioritaire, et relancés quand la grille est libre. Elle optimise aussi l’écriture et la lecture de petits fichiers, elle</p>
+
+<h4 id="rgis-lebrun-airbus-group-suresnes">Régis Lebrun (Airbus group, Suresnes)</h4>
+
+<p>Le krigeage : représenter une relation fonctionnelle, connue par deux nuages de points, par une espérance conditionnelle : on fait une prédiction linéaire, dont les coefficients se calculent en inversant la matrice de covariance. Celle-ci est souvent mal conditionnée, non creuse (décroissance insuffisante). D’où une représentation par une h-matrice : décomposition hiérachique en morceaux de petit rang. L’hypothèse est que l’intéraction entre données provenant d’ensembles de points éloignés peut être remplacée par une valeur moyenne, d’où rang 1. Au total, complexité en NlogN pour le stockage et N^2 logN pour la multiplication.</p>
+
+<p>Le thésard de P13, Benoît Lizé, a écrit une librairie h-mat en C++ suffisamment propre pour être intégrée dans le logiciel maison et publiée par LMS. Embauché, il est parti chez Google au bout de 4 mois. On a continué à développer, on arrive à traiter sur une machine de bureau (station de travail) un panneau d’avion de 3x3 m avec toutes les attaches pour accessoires.</p>
+
+<p>Un peu de pub pour OpenTurns. Ca fait 15 ans qu’on a commencé à développer ce logiciel libre, 1 personne à Airbus et 1 personne à EDF (5 mois par an chacune, en théorie), en partenariat avec une PME qui vend une version emballée. Bénéfice pour les entreprises : tests, retour de bugs, exemples d’utilisation, tendance pour le développement, qui permet d’améliorer un outil qui est utilisé en interne.</p>
+
+<h2 id="table-ronde-1">Table ronde</h2>
+
+<h3 id="stphane-requena-genci">Stéphane Requena (Genci)</h3>
+
+<p>HPC-PME : lancé en 2010, avec les pôles de compétitivité, CNRS, Inria, X et Oseo. Objectif : convaincre des PME de l’utilité pour elles du HPC. Pour cela, mettre un chercheur en contact avec une PME. 50 PME touchées en 4 ans. Vivier potentiel : 4000. bpi-France aide les entreprises à optimiser les financements.
+HPC-PME phase 2 : on est reparti pour 5 ans, en partenariat avec Teratec. Objectif : arriver à 200 par an. Moyen : pôles régionaux avec des prosélytes et des réseaux d’experts régionaux. Jusqu’à présent, on a bricolé. Maintenant, on doit changer d’échelle.</p>
+
+<h3 id="table-ronde-">Table ronde :</h3>
+<p>S. Requena (Genci), P. Helluy, N. Muot (Axessim)</p>
+
+<p>quels besoins ?
+des solutions techniques nouvelles pour les entreprises ?
+accès au HPC par les entreprises ?
+qu’est-ce qui est simple, qui l’est moins ?
+quels financements, quelles ressources HPC ?
+comment intégrer des résultats théoriques ? comment pérenniser les relations ? comment diffuser la culture HPC au sein des entreprises ?</p>
+
+<h4 id="axessim-comment-avez-vous-trouv-lirma-">Axessim: comment avez vous trouvé l’IRMA ?</h4>
+
+<p><strong>Helluy</strong> : via un contact personnel et de manière fortuite. Le talent du stagiaire de M2 a permis de décoller.</p>
+
+<p><strong>Muot</strong> : on a pu bâtir progressivement le projet autour de l’étudiant. Heureusement qu’il est resté, on l’a embauché ensuite. Le doctorant (CIFRE) a été embauché dès sa première année de doctorat.</p>
+
+<p><strong>Helluy</strong> : la première étape a été un code open-source commun. Bon pour nous : un code OpenCL documenté et sans erreur. Axessim a enveloppé ce code dans du graphique.</p>
+
+<p><strong>Helluy</strong> : le code ONERA, sur hexaèdre, utilisant une propriété spéciale du rotationnel, gagnait un facteur 50. On a vu comment le modifier pour garder le même gain pour un système de lois de conservaton général. Ensuite, la programmation GPU gagne un facteur 10.</p>
+
+<h4 id="quelle-dure-entre-une-ide-et-une-ralisation-">Quelle durée entre une idée et une réalisation ?</h4>
+
+<p><strong>Helluy/Muot</strong> : Les 3 années de la thèse. Dont 6 mois de tuning pour optimiser les performances.</p>
+
+<h4 id="comment-faire-un-sujet-de-thse-lorsque-lobjectif-est-amliorer-la-comptitivit-dune-petite-entreprise-">Comment faire un sujet de thèse lorsque l’objectif est améliorer la compétitivité d’une petite entreprise ?</h4>
+
+<p><strong>Helluy</strong> : très souvent, il y a un problème mathématique intéressant qui est au coeur de la thèse.</p>
+
+<p><strong>Requena</strong> : au bout, il y a un job pour le doctorant, ça fait partie des objectifs des organismes de recherche. Noter que les PME sont très intéressées à ces embauches, elle ont de la peine à recruter.</p>
+
+<p><strong>Prudhomme</strong>: j’ai une collaboration avec une ETI financée par un PEPS2 AMIES autour d’une résolution non standard des équations de Navier-Stokes incompressibles. Le sujet a été très peu traité d’un point de vue théorique et numérique et il présente de sérieux challenges sérieux.</p>
+
+<h4 id="rle-des-ppinires-dentreprises-">rôle des pépinières d’entreprises ?</h4>
+
+<p><strong>Muot</strong>:Axessim a démarré dans un incubateur en 2007, sans contacts avec l’université. Le contact s’est effectué de manière fortuite par la suite.</p>
+
+<h4 id="comment-faire-pour-une-pmestartup-de-grer-un-code-hpc-quid-du-manque-dexpertise-en-local-et-cot-lev-de-maintenance-">Comment faire pour une PME/Startup de gérer un code HPC? quid du manque d’expertise en local et coût élevé de maintenance ?</h4>
+
+<p><strong>Prudhomme</strong>: se greffer sur des communautés autour de logiciels libres comme par exemple OpenTURNS, OpenFOAM et embaucher des docteurs qui pourront faire le lien avec cette communauté et les intégrer/adapter aux besoins de l’entreprise. La maintenance devient collective et le coût réduit. Des PME peuvent développer des services autour de ces plateformes, les chercheurs ont un accès au code source pour développer de nouveaux algorithmes.
+Une RMI autour de la Propriété Intellectuelle et de ce modèle de développement est prévue</p>
+
+<p><strong>Michelin</strong>: pourquoi ne pas créer des consortiums autour de logiciels (suivre l’exemple de MUMPS). Les industriels émargent au consortium sur plusieurs et apportent des financements à la R&amp;D de la plateforme logicielle.</p>
+
+<p><strong>Prudhomme</strong>: C’est effectivement une très bonne idée. Je n’ai pas connaissance de tel montage actuellement en mathématique. Nous allons regarder ca. Le Logiciel <a href="http://www.feelpp.org">Feel++</a> met en place un consortium mais on en est encore à l’étape juridique</p>
+
+<h4 id="quel-est-lintrt-pour-les-acadmiques-de-travailler-sur-des-problmatiques-hpc-industriels">Quel est l’intérêt pour les académiques de travailler sur des problématiques HPC industriels</h4>
+
+<p><strong>Helluy</strong>: de travailler sur des applications concretes et d’en extraire des problèmes de mathématiques</p>
+
+<p><strong>Prudhomme</strong> : Il n’y a pas que l’aspect recherche qui peut motiver il y a aussi l’aspect formation pour nos étudiants. Les industriels amènent des sujets de stage et des contextes d’applications qui sont très intéressants pour illustrer la puissance des mathématiques et du HPC et les motiver a suivre une filière Mathématique Appliquées/HPC. les industriels sont bienvenus pour venir motiver nos étudiants dans les masters.</p>
+</div>
+
+</div>
+
+
+  	</div>
+
+   <div class="col-md-3">
+    <div class="well">
+      <div>
+        <ul class="nav nav-stacked">
+          <li><a href="/news/">Tous les actualités</a></li>
+          <li><a href="/news/1">Site web</a></li>
+          <li><a href="/news/2">Stage</a></li>
+          <li><a href="/news/3">Formation</a></li>
+        </ul>
+        
+      </div>
+
+    </div>
+  </div>
+  </div>
+</div>
+
+    
+
+        <!-- Return to top arrow -->
+    <a href="#" class="back-to-top" style="display: inline;">
+      <i class="fa fa-arrow-circle-up fa-6"></i>
+    </a>
+
+    <hr class="soften">
+
+    <div class="container-fluid" style="padding-top:50px">
+      <center><h2>Partager notre site</h2></center>
+      <div id="share" class="centered" style="margin-top: 50px"></div>
+
+      <center style="margin-top:50px">
+
+      <a href="mailto:contact-csmi@cemosis.fr" class="btn btn-primary btn-lg hvr-pulse-grow" role="button" style="width:200px"><span class="fa fa-question"></span>Contactez-nous</a>
+
+      <a href="https://aria.u-strasbg.fr/" class="btn btn-success btn-lg hvr-pulse-grow" role="button" style="width:200px"><span class="fa fa-check"></span>Candidatez</a>
+
+      <a href="https://github.com/cemosis/csmi.cemosis.fr/issues" class="btn btn-danger btn-lg hvr-pulse-grow" role="button" style="">Rapporter un problème</a>
+
+      </center>
+    </div>
+
+
+    <footer class="footer">
+
+  <div id="sitemap" class="container-fluid">
+    <div class="row-fluid">
+      <div class="col-md-2">
+        <ul>
+          <li>
+            <h4>Page d'accueil</h4>
+          </li>
+          <li>
+            <a href="/#testimony">Témoignages</a>
+          </li>
+          <li>
+            <a href="/#access">Accès</a>
+          </li>
+          <li>
+            <a href="/#metiers">Métiers</a>
+          </li>
+          <li>
+            <a href="/#partnership">Partenaires</a>
+          </li>
+          <li>
+            <a href="/#international">Relations internationales</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-2">
+        <ul>
+          <li>
+            <h4>&Eacute;quipe</h4>
+          </li>
+          <li>
+            <a href="/team/#managers">Responsables</a>
+          </li>
+          <li>
+            <a href="/team/#teachingstaff">&Eacute;quipe P&eacute;dagogique</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md-2">
+       <ul>
+        <li>
+          <h4>Promotions</h4>
+        </li>
+        
+        <li><a href="/promotions/#CSMI-2015">CSMI 2015</a></li>
+        
+        <li><a href="/promotions/#CSMI-2014">CSMI 2014</a></li>
+        
+        <li><a href="/promotions/#CSSI-2013">CSSI 2013</a></li>
+        
+        <li><a href="/promotions/#CSSI-2012">CSSI 2012</a></li>
+        
+       </ul>
+      </div>
+
+      <div class="col-md-2">
+        <ul>
+          <li>
+            <h4>Actualit&eacute;s</h4>
+          </li>
+          <li>
+            <a href="/news/">Tous les actualités</a>
+          </li>
+          <li>
+            <a href="/news/1">Site web</a>
+          </li>
+          <li>
+            <a href="/news/2">Stage</a>
+          </li>
+          <li>
+            <a href="/news/3">Formation</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md-2">
+        <ul>
+          <li>
+            <h4>Enseignements</h4>
+          </li>
+          <li>
+            <a href="/courses/#S1">Semestre 1</a>
+          </li>
+          <li>
+            <a href="/courses/#S2">Semestre 2</a>
+          </li>
+          <li>
+            <a href="/courses/#S3">Semestre 3</a>
+          </li>
+          <li>
+            <a href="/courses/#S4">Semestre 4</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md-2">
+        <ul>
+          <li>
+            <h4>Entreprises</h4>
+          </li>
+          
+            <li><a href="/entreprises/#1">Plastic Omnium Auto Extérieur Services</a>
+          
+            <li><a href="/entreprises/#2">Hager Controls</a>
+          
+            <li><a href="/entreprises/#3">Holo3</a>
+          
+            <li><a href="/entreprises/#4">Dassault Systèmes</a>
+          
+            <li><a href="/entreprises/#5">Airbus Group</a>
+          
+            <li><a href="/entreprises/#6">Axessim</a>
+          
+            <li><a href="/entreprises/#7">Altran</a>
+          
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <ul class="footer-links">
+        <li>
+          <p style="padding-top:20px">&copy; Cemosis 2015 Tous droits réservés</p>
+        </li>
+        <li>
+          <a href="/about">&Agrave; propos</a>
+        </li>
+
+        <li>
+          <a href="https://www.linkedin.com/groups?home=&gid=3923807&trk=anet_ug_hm"><i class="fa fa-linkedin"></i>&nbsp;LinkedIn</a>
+        </li>
+        <li>
+          <p>Icons made by <a href="http://www.freepik.com/">Freepik</a> from <a href="http://www.flaticon.com">flaticon</a></p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</footer>
+
+
+    <script src="/js/jquery-1.11.3.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jssocials.js"></script>
+<script src="/js/readmore.min.js"></script>
+<!-- jsSocial share buttons -->
+<script>
+$("#share").jsSocials({
+    shares: ["email", "twitter", "facebook", "googleplus", "linkedin"],
+    showLabel: true,
+    showCount: true
+});
+</script>
+<script>
+(function(i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+})(window, document, 'script', 'http://www.google-analytics.com/analytics.js', 'ga');
+
+ga('create', 'UA-39841210-3', 'auto');
+ga('send', 'pageview');
+</script>
+<!-- scroll to element -->
+<script>
+$('a[href^="#"]').on('click', function(event) {
+
+    var target = $($(this).attr('href'));
+
+    if (target.length) {
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: target.offset().top
+        }, 1000);
+    }
+
+});
+</script>
+<!-- back to top action -->
+<script>
+jQuery(document).ready(function() {
+    var offset = 250;
+    var duration = 800;
+    jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > offset) {
+            jQuery('.back-to-top').fadeIn(duration);
+        } else {
+            jQuery('.back-to-top').fadeOut(duration);
+        }
+    });
+
+    jQuery('.back-to-top').click(function(event) {
+        event.preventDefault();
+        jQuery('html, body').animate({
+            scrollTop: 0
+        }, duration);
+        return false;
+    })
+});
+</script>
+<script>
+jQuery(function($) {
+    if ($(window).width() > 769) {
+        $('.navbar .dropdown').hover(function() {
+            $(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
+
+        }, function() {
+            $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp();
+
+        });
+
+        $('.navbar .dropdown > a').click(function() {
+            location.href = this.href;
+        });
+
+    }
+});
+</script>
+
+
+
+  </body>
+
+</html>
