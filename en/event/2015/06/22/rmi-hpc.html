@@ -231,11 +231,11 @@ lieu: Maison de la simulation, Bâti. 565 - Digiteo, CEA Saclay (plan d’accès
 
 <p><img src="https://github.com/cemosis/rmi/blob/master/HPC/gallery.png" alt="" /></p>
 
-<h1 id="fit-19me-rencontre-mathmatiques-industrie">[fit] 19ème Rencontre Mathématiques Industrie</h1>
-<p>## Calcul Haute Performance</p>
+<h1 id="me-rencontre-mathmatiques-industrie">19ème Rencontre Mathématiques Industrie</h1>
 
-<hr />
-<p>## Programme</p>
+<h2 id="calcul-haute-performance">Calcul Haute Performance</h2>
+
+<h2 id="programme">Programme</h2>
 
 <ul>
   <li>13h30 - 14h00 : Accueil / Introduction</li>
@@ -245,8 +245,7 @@ lieu: Maison de la simulation, Bâti. 565 - Digiteo, CEA Saclay (plan d’accès
   <li>16h30 - 17h30 : Table ronde</li>
 </ul>
 
-<hr />
-<p>## Accueil - 13h45 - 14h00</p>
+<h2 id="accueil---13h45---14h00">Accueil - 13h45 - 14h00</h2>
 
 <p>Quelques mots d’Introduction</p>
 
@@ -256,16 +255,13 @@ lieu: Maison de la simulation, Bâti. 565 - Digiteo, CEA Saclay (plan d’accès
   <li>SMAI</li>
 </ul>
 
-<hr />
-
 <h2 id="atelier-1---14h00---15h00">Atelier 1 - 14h00 - 15h00</h2>
 
-<h2 id="calcul-sur-gpu-pour-les-quations-de-maxwell-histoire-dune-collaboration-math-entreprises-qui-passe--lchelle">Calcul sur GPU pour les équations de Maxwell: Histoire d’une collaboration Math Entreprises qui passe à l’échelle</h2>
+<h3 id="calcul-sur-gpu-pour-les-quations-de-maxwell-histoire-dune-collaboration-math-entreprises-qui-passe--lchelle">Calcul sur GPU pour les équations de Maxwell: Histoire d’une collaboration Math Entreprises qui passe à l’échelle</h3>
 
 <h3 id="n-muot-axessim-p-helluy-u-strasbourgcnrs-insmi-pdf-slideshttpsgithubcomcemosisrmiblobmasterhpcrmihpc2015phelluynmuotpdf">N. Muot (AxesSim), P. Helluy (U. Strasbourg/CNRS-INSMI) <a href="https://github.com/cemosis/rmi/blob/master/HPC/RMIHPC2015_PHelluy_NMuot.pdf">PDF Slides</a></h3>
 
-<hr />
-<p>## Atelier 2 - 15h30 - 16h30 J. Garnier</p>
+<h2 id="atelier-2---15h30---16h30-j-garnier">Atelier 2 - 15h30 - 16h30 J. Garnier</h2>
 
 <h2 id="le-hpc-au-service-des-incertitudes">Le HPC au service des Incertitudes</h2>
 
@@ -274,8 +270,6 @@ lieu: Maison de la simulation, Bâti. 565 - Digiteo, CEA Saclay (plan d’accès
 
 <h3 id="utilisation-des-h-matrices-pour-lapprentissage-et-la-simulation-de-champs-gaussiens">Utilisation des h-matrices pour l’apprentissage et la simulation de champs Gaussiens</h3>
 <p>#### R. Lebrun (Airbus) <a href="https://github.com/cemosis/rmi/blob/master/HPC/RMIHPC2015_RLebrun.pdf">PDF Slides</a></p>
-
-<hr />
 
 <h2 id="table-ronde---16h30---17h30">Table Ronde - 16h30 - 17h30</h2>
 
@@ -387,7 +381,9 @@ Notre objectif, c’est de proposer à ces acteurs un accès à des ressources d
 
 <h3 id="atelier-2-le-hpc-au-service-des-incertitudes">Atelier 2: Le HPC au service des incertitudes</h3>
 
-<h4 id="laurence-viry-ljk-universit-de-grenoble-alpes">Laurence Viry (LJK, Université de Grenoble-Alpes)</h4>
+<ul>
+  <li>Laurence Viry (LJK, Université de Grenoble-Alpes)</li>
+</ul>
 
 <p>La quantification d’incertitude, ça consiste à estimer les incertitudes sur les variables d’entrée d’un modèle et à estimer la part d’incertitude qui en résulte sur les sorties. On passe souvetn par un méta-modèle, modèle simplifié.
 J’ai travaillé sur un modèle hydrodynamique couplé à un modèle biologique, déterministe. On s’intéresse à la concentration en phytoplancton.
@@ -397,7 +393,9 @@ Qu’est-ce ? On décompose la variance de $Y=G(X)$ en somme des variances expli
 <script type="math/tex">Var(Y|X_i_1,...,X_i_p)/Var(Y).</script>
 Estimer les indices de Sobol, c’est calculer des intégrales en grand dimension. Les méthodes spectrales, peu coûteuses, imposent des hypothèses de régularité. Elles sont limitées aux indices d’ordre 1. Les méthodes Monte-Carlo sont coûteuses. La méthode des hypercubes latins répliqués présente le bon compromis. Le package sensitivity de R fabrique automatiquement les plans d’expérience. La grille de calcul de Grenoble (CIMENT) admet des runs de priorité 0, automatiquement éjectés face à un run prioritaire, et relancés quand la grille est libre. Elle optimise aussi l’écriture et la lecture de petits fichiers, elle</p>
 
-<h4 id="rgis-lebrun-airbus-group-suresnes">Régis Lebrun (Airbus group, Suresnes)</h4>
+<ul>
+  <li>Régis Lebrun (Airbus group, Suresnes)</li>
+</ul>
 
 <p>Le krigeage : représenter une relation fonctionnelle, connue par deux nuages de points, par une espérance conditionnelle : on fait une prédiction linéaire, dont les coefficients se calculent en inversant la matrice de covariance. Celle-ci est souvent mal conditionnée, non creuse (décroissance insuffisante). D’où une représentation par une h-matrice : décomposition hiérachique en morceaux de petit rang. L’hypothèse est que l’intéraction entre données provenant d’ensembles de points éloignés peut être remplacée par une valeur moyenne, d’où rang 1. Au total, complexité en NlogN pour le stockage et N^2 logN pour la multiplication.</p>
 
@@ -407,12 +405,17 @@ Estimer les indices de Sobol, c’est calculer des intégrales en grand dimensio
 
 <h2 id="table-ronde-1">Table ronde</h2>
 
-<h3 id="stphane-requena-genci">Stéphane Requena (Genci)</h3>
+<ul>
+  <li>Stéphane Requena (Genci)</li>
+</ul>
 
 <p>HPC-PME : lancé en 2010, avec les pôles de compétitivité, CNRS, Inria, X et Oseo. Objectif : convaincre des PME de l’utilité pour elles du HPC. Pour cela, mettre un chercheur en contact avec une PME. 50 PME touchées en 4 ans. Vivier potentiel : 4000. bpi-France aide les entreprises à optimiser les financements.
 HPC-PME phase 2 : on est reparti pour 5 ans, en partenariat avec Teratec. Objectif : arriver à 200 par an. Moyen : pôles régionaux avec des prosélytes et des réseaux d’experts régionaux. Jusqu’à présent, on a bricolé. Maintenant, on doit changer d’échelle.</p>
 
-<h3 id="table-ronde-">Table ronde :</h3>
+<ul>
+  <li>Table ronde :</li>
+</ul>
+
 <p>S. Requena (Genci), P. Helluy, N. Muot (Axessim)</p>
 
 <p>quels besoins ?
@@ -422,7 +425,7 @@ qu’est-ce qui est simple, qui l’est moins ?
 quels financements, quelles ressources HPC ?
 comment intégrer des résultats théoriques ? comment pérenniser les relations ? comment diffuser la culture HPC au sein des entreprises ?</p>
 
-<h4 id="axessim-comment-avez-vous-trouv-lirma-">Axessim: comment avez vous trouvé l’IRMA ?</h4>
+<h3 id="axessim-comment-avez-vous-trouv-lirma-">Axessim: comment avez vous trouvé l’IRMA ?</h3>
 
 <p><strong>Helluy</strong> : via un contact personnel et de manière fortuite. Le talent du stagiaire de M2 a permis de décoller.</p>
 
@@ -432,11 +435,11 @@ comment intégrer des résultats théoriques ? comment pérenniser les relations
 
 <p><strong>Helluy</strong> : le code ONERA, sur hexaèdre, utilisant une propriété spéciale du rotationnel, gagnait un facteur 50. On a vu comment le modifier pour garder le même gain pour un système de lois de conservaton général. Ensuite, la programmation GPU gagne un facteur 10.</p>
 
-<h4 id="quelle-dure-entre-une-ide-et-une-ralisation-">Quelle durée entre une idée et une réalisation ?</h4>
+<h3 id="quelle-dure-entre-une-ide-et-une-ralisation-">Quelle durée entre une idée et une réalisation ?</h3>
 
 <p><strong>Helluy/Muot</strong> : Les 3 années de la thèse. Dont 6 mois de tuning pour optimiser les performances.</p>
 
-<h4 id="comment-faire-un-sujet-de-thse-lorsque-lobjectif-est-amliorer-la-comptitivit-dune-petite-entreprise-">Comment faire un sujet de thèse lorsque l’objectif est améliorer la compétitivité d’une petite entreprise ?</h4>
+<h3 id="comment-faire-un-sujet-de-thse-lorsque-lobjectif-est-amliorer-la-comptitivit-dune-petite-entreprise-">Comment faire un sujet de thèse lorsque l’objectif est améliorer la compétitivité d’une petite entreprise ?</h3>
 
 <p><strong>Helluy</strong> : très souvent, il y a un problème mathématique intéressant qui est au coeur de la thèse.</p>
 
@@ -444,11 +447,11 @@ comment intégrer des résultats théoriques ? comment pérenniser les relations
 
 <p><strong>Prudhomme</strong>: j’ai une collaboration avec une ETI financée par un PEPS2 AMIES autour d’une résolution non standard des équations de Navier-Stokes incompressibles. Le sujet a été très peu traité d’un point de vue théorique et numérique et il présente de sérieux challenges sérieux.</p>
 
-<h4 id="rle-des-ppinires-dentreprises-">rôle des pépinières d’entreprises ?</h4>
+<h3 id="rle-des-ppinires-dentreprises-">rôle des pépinières d’entreprises ?</h3>
 
 <p><strong>Muot</strong>:Axessim a démarré dans un incubateur en 2007, sans contacts avec l’université. Le contact s’est effectué de manière fortuite par la suite.</p>
 
-<h4 id="comment-faire-pour-une-pmestartup-de-grer-un-code-hpc-quid-du-manque-dexpertise-en-local-et-cot-lev-de-maintenance-">Comment faire pour une PME/Startup de gérer un code HPC? quid du manque d’expertise en local et coût élevé de maintenance ?</h4>
+<h3 id="comment-faire-pour-une-pmestartup-de-grer-un-code-hpc-quid-du-manque-dexpertise-en-local-et-cot-lev-de-maintenance-">Comment faire pour une PME/Startup de gérer un code HPC? quid du manque d’expertise en local et coût élevé de maintenance ?</h3>
 
 <p><strong>Prudhomme</strong>: se greffer sur des communautés autour de logiciels libres comme par exemple OpenTURNS, OpenFOAM et embaucher des docteurs qui pourront faire le lien avec cette communauté et les intégrer/adapter aux besoins de l’entreprise. La maintenance devient collective et le coût réduit. Des PME peuvent développer des services autour de ces plateformes, les chercheurs ont un accès au code source pour développer de nouveaux algorithmes.
 Une RMI autour de la Propriété Intellectuelle et de ce modèle de développement est prévue</p>
@@ -457,7 +460,7 @@ Une RMI autour de la Propriété Intellectuelle et de ce modèle de développeme
 
 <p><strong>Prudhomme</strong>: C’est effectivement une très bonne idée. Je n’ai pas connaissance de tel montage actuellement en mathématique. Nous allons regarder ca. Le Logiciel <a href="http://www.feelpp.org">Feel++</a> met en place un consortium mais on en est encore à l’étape juridique</p>
 
-<h4 id="quel-est-lintrt-pour-les-acadmiques-de-travailler-sur-des-problmatiques-hpc-industriels">Quel est l’intérêt pour les académiques de travailler sur des problématiques HPC industriels</h4>
+<h3 id="quel-est-lintrt-pour-les-acadmiques-de-travailler-sur-des-problmatiques-hpc-industriels">Quel est l’intérêt pour les académiques de travailler sur des problématiques HPC industriels</h3>
 
 <p><strong>Helluy</strong>: de travailler sur des applications concretes et d’en extraire des problèmes de mathématiques</p>
 
